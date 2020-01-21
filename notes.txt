@@ -1,0 +1,19 @@
+Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.
+
+Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components’ output.
+
+Both Jest and Enzyme are specifically designed to test React applications, Jest can be used with any other Javascript app but Enzyme only works with React.
+
+npm run test
+
+touch setupTests.js
+
+npm i enzyme enzyme enzyme-adapter-react-16
+
+create Root.js to export give your test functions access to redux state
+
+npm i axios redux-thunk moxios
+
+the moxios package is used for API request testing because axios will not work within Jest's command line enviornment
+
+moxios can be configured to intercept an HTTP request and simulate the expected response
